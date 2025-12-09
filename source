@@ -1759,10 +1759,10 @@ function OrionLib:MakeWindow(WindowConfig)
 	return TabFunction
 end   
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulla-Softworks/Luna-Interface/refs/heads/main/source.lua"))()
-
 function OrionLib:Destroy()
 	Orion:Destroy()
 end
 
 return OrionLib
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulla-Softworks/Luna-Interface/refs/heads/main/source.lua"))()
