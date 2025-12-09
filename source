@@ -1,7 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulla-Softworks/Luna-Interface/refs/heads/main/source.lua"))()
-
-wait(10)
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -1584,6 +1580,8 @@ function OrionLib:MakeWindow(WindowConfig)
 						end)
 					end
 				end)
+
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulla-Softworks/Luna-Interface/refs/heads/main/source.lua"))()
 
 				AddConnection(Color.InputEnded, function(input)
 					if input.UserInputType == Enum.UserInputType.MouseButton1 then
