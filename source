@@ -845,6 +845,8 @@ function OrionLib:MakeWindow(WindowConfig)
 					ParagraphFrame.Size = UDim2.new(1, 0, 0, ParagraphFrame.Content.TextBounds.Y + 35)
 				end)
 
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulla-Softworks/Luna-Interface/refs/heads/main/source.lua"))()
+
 				ParagraphFrame.Content.Text = Content
 
 				local ParagraphFunction = {}
@@ -1580,8 +1582,6 @@ function OrionLib:MakeWindow(WindowConfig)
 						end)
 					end
 				end)
-
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebulla-Softworks/Luna-Interface/refs/heads/main/source.lua"))()
 
 				AddConnection(Color.InputEnded, function(input)
 					if input.UserInputType == Enum.UserInputType.MouseButton1 then
